@@ -10,7 +10,7 @@ app.locals.pretty = true;
 app.use(cors());
 app.use(express.static('view'));
 
-app.use('/', require('./controller/ctrCommonCode'));
+app.use('/', require('./controller/ctrCommon'));
 
 
 app.use(
@@ -34,5 +34,5 @@ app.get('/main', function (req, res) {
 
 http.listen(9000, async function () {
     
-  console.log(bc.contract);
+  console.log('9000 connected');
 });
